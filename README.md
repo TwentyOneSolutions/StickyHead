@@ -17,7 +17,7 @@ The plugin registers event handlers for window scroll and resize, so to trigger 
 
 	$(document).on("hidden.bs.collapse shown.bs.collapse", function(){
 
-		// trigger scroll and resize in case we have tables with sticky-head inside the collapsible
+	// trigger scroll and resize to re-layout sticky-head tables inside collapsible elements
         $(window).scroll();
         $(window).resize();
     });
