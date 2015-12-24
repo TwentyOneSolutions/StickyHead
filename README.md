@@ -13,6 +13,10 @@ To use, simply call the plugin on the target tables, e.g.
       $(".sticy-head").stickyHead();
     });
 
+The plugin registers event handlers for window scroll and resize, so to trigger a "refresh" you can simply fire the scroll event, e.g.
+
+    $(window).scroll();
+    
 
 Be sure to wrap your table header with <thead> and call the plugin on the table, e.g.
 
