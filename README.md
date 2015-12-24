@@ -15,9 +15,9 @@ To use, simply call the plugin on the target tables, e.g.
 
 The plugin registers event handlers for window scroll and resize, so to trigger a "refresh" you can simply fire the scroll event.  If, for example, your sticky-head tables are inside a Bootstrap collapse element, you can trigger a refresh after the collapsible element is hidden or shown like so:
 
+	// trigger scroll and resize to re-layout sticky-head tables inside collapsible elements
 	$(document).on("hidden.bs.collapse shown.bs.collapse", function(){
 
-	// trigger scroll and resize to re-layout sticky-head tables inside collapsible elements
         $(window).scroll();
         $(window).resize();
     });
