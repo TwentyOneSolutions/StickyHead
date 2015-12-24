@@ -1,6 +1,3 @@
-/*! https://github.com/TwentyOneSolutions/StickyHead
- *  Keep table headers in view while scrolling down a long table
- */
 ;(function($, window, undefined) {
 
     /* jQuery plugin */
@@ -22,8 +19,7 @@
                     .remove()
                     .end()
                     .addClass("sticky-head-fixed")
-                    .insertBefore($table)
-                    .attr("data-ix", ix);
+                    .insertBefore($table);
                 onResize();
 
                 $theadf.data("origTable", $table); // keep reference to the original table so we can test if it's visible
