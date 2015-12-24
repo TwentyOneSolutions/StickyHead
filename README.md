@@ -3,7 +3,18 @@ A modern jQuery plugin for keeping HTML table headers in view while scrolling, b
 
 I've used other similar plugins before, but they did not play well with hidden tables, e.g. tables that were wrapped within collapsed elements, so the sticky header of a hidden table was always still visible.  This plugin handles that case properly by checking whether the table is visible.
 
-To use, be sure to wrap your table header with <thead> and call the plugin on the table, e.g.
+To use, simply call the plugin on the target tables, e.g.
+
+    // include jquery
+    // include jquery.stickyhead.js
+    
+    $(function(){
+    
+      $(".sticy-head").stickyHead();
+    });
+
+
+Be sure to wrap your table header with <thead> and call the plugin on the table, e.g.:
 
     <table class="sticky-head">
       <thead>
@@ -36,12 +47,3 @@ To use, be sure to wrap your table header with <thead> and call the plugin on th
         </tr>
       </tbody>
     </table>
-  
-    
-    // include jquery
-    // include jquery.stickyhead.js
-    
-    $(function(){
-    
-      $(".sticy-head").stickyHead();
-    });
