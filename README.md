@@ -14,7 +14,7 @@ To use, simply call the plugin on the target tables, e.g.
     });
 
 
-Be sure to wrap your table header with <thead> and call the plugin on the table, e.g.:
+Be sure to wrap your table header with <thead> and call the plugin on the table, e.g.
 
     <table class="sticky-head">
       <thead>
