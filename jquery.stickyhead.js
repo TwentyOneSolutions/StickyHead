@@ -13,12 +13,14 @@
                     return; //  already initialized
 
                 $table.wrap('<div class="sticky-head-container"/>');
+
                 $theadf = $table.clone();
                 $theadf
                     .find("tbody")
                     .remove()
                     .end()
                     .addClass("sticky-head-fixed")
+                    .css("margin-top", 0)
                     .insertBefore($table);
                 onResize();
 
